@@ -1,0 +1,38 @@
+{
+  "name": "flipflop-prototype",
+  "version": "1.0.0",
+  "description": "Interactive P5.js NFT Art on Base blockchain",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "nft",
+    "p5js",
+    "base",
+    "blockchain",
+    "art"
+  ],
+  "author": "cryptoflops",
+  "license": "MIT",
+  "dependencies": {
+    "@reown/appkit": "^1.8.6",
+    "@reown/appkit-adapter-wagmi": "^1.8.6",
+    "@tanstack/react-query": "^5.89.0",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "next": "^15.5.3",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2",
+    "viem": "^2.37.7",
+    "wagmi": "^2.17.1"
+  }
+}
