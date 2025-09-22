@@ -1,6 +1,6 @@
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
-import { base, mainnet } from 'viem/chains'
+import { base, mainnet } from '@reown/appkit/networks'
 
 // Get projectId from https://cloud.reown.com
 const projectId = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID || ''
@@ -15,14 +15,14 @@ const metadata = {
 
 // Create wagmiAdapter
 const wagmiAdapter = new WagmiAdapter({
-  chains: [base, mainnet],
-  projectId,
-  metadata
+  networks: [base, mainnet],
+  projectId
 })
 
 // Create the modal
 export const appKit = createAppKit({
   adapters: [wagmiAdapter],
+  networks: [base, mainnet],
   projectId,
   metadata,
   features: {
