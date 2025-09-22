@@ -1,0 +1,53 @@
+/* FlipFlop Prototype Styles */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #dcdcdc;
+}
+
+canvas {
+  display: block;
+  cursor: crosshair;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hide any scrollbars that might appear */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* For future UI elements */
+.controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.info {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #666;
+  font-size: 12px;
+  z-index: 1000;
+}
