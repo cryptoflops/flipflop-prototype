@@ -39,3 +39,11 @@ next-env.d.ts
 # IDEs
 .vscode/
 .idea/
+
+# Hardhat
+cache/
+artifacts/
+deployments/
+
+# Hardhat ignition
+ignition/deployments/
