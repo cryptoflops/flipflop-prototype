@@ -29,6 +29,22 @@ export default function Home() {
           <p>• Press 'C' to clear</p>
         </div>
       </div>
+
+      {/* Navigation Buttons */}
+      <div className="absolute top-20 left-4 flex flex-col gap-3">
+        <a
+          href="/assets"
+          className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
+        >
+          <span className="text-lg">🏦</span>
+          <span>View Assets</span>
+        </a>
+        <div className="px-4 py-2 bg-black/60 rounded-lg text-white/80 text-xs backdrop-blur-sm">
+          <p className="font-semibold mb-1">✨ New Feature!</p>
+          <p>Explore fractional ownership</p>
+          <p>of NFTs & Real World Assets</p>
+        </div>
+      </div>
     </main>
   )
 }
